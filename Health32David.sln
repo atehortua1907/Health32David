@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health32David.FrontEnd", "Health32David.FrontEnd\Health32David.FrontEnd.csproj", "{95254480-188B-4195-9CA7-0D22ACAEBE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health32David.Backend.SVC", "Health32David.Backend.SVC\Health32David.Backend.SVC.csproj", "{104F5792-CD82-489A-B393-EDA9C6695795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health32David.Backend.DAC", "Health32David.Backend.DAC\Health32David.Backend.DAC.csproj", "{4F9B2499-707E-478A-868D-147E3433DB32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health32David.Backend.Common", "Health32David.Backend.Common\Health32David.Backend.Common.csproj", "{B7A6BA7D-A173-4212-8AB9-5CF43C72240F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://atehortua1907.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Health32David.FrontEnd\\Health32David.FrontEnd.csproj
+		SccProjectName1 = Health32David.FrontEnd
+		SccLocalPath1 = Health32David.FrontEnd
+		SccProjectUniqueName2 = Health32David.Backend.SVC\\Health32David.Backend.SVC.csproj
+		SccProjectName2 = Health32David.Backend.SVC
+		SccLocalPath2 = Health32David.Backend.SVC
+		SccProjectUniqueName3 = Health32David.Backend.DAC\\Health32David.Backend.DAC.csproj
+		SccProjectName3 = Health32David.Backend.DAC
+		SccLocalPath3 = Health32David.Backend.DAC
+		SccProjectUniqueName4 = Health32David.Backend.Common\\Health32David.Backend.Common.csproj
+		SccProjectName4 = Health32David.Backend.Common
+		SccLocalPath4 = Health32David.Backend.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95254480-188B-4195-9CA7-0D22ACAEBE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95254480-188B-4195-9CA7-0D22ACAEBE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95254480-188B-4195-9CA7-0D22ACAEBE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95254480-188B-4195-9CA7-0D22ACAEBE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104F5792-CD82-489A-B393-EDA9C6695795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104F5792-CD82-489A-B393-EDA9C6695795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104F5792-CD82-489A-B393-EDA9C6695795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104F5792-CD82-489A-B393-EDA9C6695795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9B2499-707E-478A-868D-147E3433DB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9B2499-707E-478A-868D-147E3433DB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9B2499-707E-478A-868D-147E3433DB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9B2499-707E-478A-868D-147E3433DB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A6BA7D-A173-4212-8AB9-5CF43C72240F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A6BA7D-A173-4212-8AB9-5CF43C72240F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A6BA7D-A173-4212-8AB9-5CF43C72240F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A6BA7D-A173-4212-8AB9-5CF43C72240F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
