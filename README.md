@@ -1,2 +1,2 @@
-# Health32David
+# Health32
 Proyecto ejemplo Konecta
