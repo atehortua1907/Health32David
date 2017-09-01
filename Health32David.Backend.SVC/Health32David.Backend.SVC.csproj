@@ -49,8 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ServicesClass\BuscarISVC.cs" />
+    <Compile Include="ServicesClass\BuscarSVC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesClass\CrearISVC.cs" />
+    <Compile Include="ServicesClass\CrearSVC.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Health32David.Backend.Common\Health32David.Backend.Common.csproj">

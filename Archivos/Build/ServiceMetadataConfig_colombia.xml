@@ -1,0 +1,29 @@
+<ServiceConfigurationCollection>
+  
+  <ServiceConfiguration name="BuscarParametrosSVC">
+    <CreatedUserName>Meucci</CreatedUserName>
+    <CreatedDateTime>2016-07-28T18:40:29.5659301-03:00</CreatedDateTime>
+    <Handler>Health32David.Backend.SVC.BuscarParametrosSVC, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Handler>
+    <Request>Health32David.Backend.ISVC.Buscar.BuscarParametrosReq, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Request>
+    <Response>Health32David.Backend.ISVC.Buscar.BuscarParametrosRes, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Response>
+    <Available>true</Available>
+    <Audit>false</Audit>
+    <TransactionalBehaviour>Suppres</TransactionalBehaviour>
+    <IsolationLevel>ReadUncommitted</IsolationLevel>
+    <ApplicationId>paciente</ApplicationId>
+  </ServiceConfiguration>
+
+  <ServiceConfiguration name="CrearPacienteSVC">
+    <CreatedUserName>Meucci</CreatedUserName>
+    <CreatedDateTime>2016-07-28T18:40:29.5659301-03:00</CreatedDateTime>
+    <Handler>Health32David.Backend.SVC.CrearPacienteSVC, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Handler>
+    <Request>Health32David.Backend.ISVC.Crear.CrearPacienteReq, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Request>
+    <Response>Health32David.Backend.ISVC.Crear.CrearPacienteRes, Health32David.Backend.SVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Response>
+    <Available>true</Available>
+    <Audit>false</Audit>
+    <TransactionalBehaviour>Suppres</TransactionalBehaviour>
+    <IsolationLevel>ReadUncommitted</IsolationLevel>
+    <ApplicationId>paciente</ApplicationId>
+  </ServiceConfiguration>
+
+</ServiceConfigurationCollection>

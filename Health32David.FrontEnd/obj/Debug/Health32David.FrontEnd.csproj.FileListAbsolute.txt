@@ -1,1 +1,12 @@
 C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Archivos\Build\Health32David.FrontEnd.exe.config
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Archivos\Build\Health32David.FrontEnd.exe
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Archivos\Build\Health32David.FrontEnd.pdb
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.Forms.frmCreatePatient.resources
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.Forms.frmWelcome.resources
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.MDIPrincipal.resources
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.Properties.Resources.resources
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.csproj.GenerateResource.Cache
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.exe
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.pdb
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Archivos\Build\ServiceMetadataConfig_colombia.xml

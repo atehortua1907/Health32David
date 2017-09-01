@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health32David.FrontEnd
+namespace Health32David.FrontEnd.Forms
 {
-    public partial class Form1 : Form
+    public partial class frmWelcome : Form
     {
-        public Form1()
+        public frmWelcome()
         {
             InitializeComponent();
         }

@@ -54,14 +54,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\frmCreatePatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\frmCreatePatient.Designer.cs">
+      <DependentUpon>frmCreatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.cs">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceCall.cs" />
+    <EmbeddedResource Include="Forms\frmCreatePatient.resx">
+      <DependentUpon>frmCreatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,7 +105,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Health32David.Backend.Common\Health32David.Backend.Common.csproj">
@@ -93,6 +118,29 @@
       <Project>{104f5792-cd82-489a-b393-eda9c6695795}</Project>
       <Name>Health32David.Backend.SVC</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhotoIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhotoIcon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhotoIcon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewPatient2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\CompañerosKonecta\Proyecto Health32\Health32Meucci\Xml\ServiceMetadataConfig_colombia.xml">
+      <Link>ServiceMetadataConfig_colombia.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\IconApp.png" />
+    <None Include="Resources\if_Delete_132192.png" />
+    <None Include="Resources\IconCancel.png" />
+    <None Include="Resources\001_59.gif" />
+    <None Include="Resources\SaveIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,19 @@
+
+<Events>
+  <Event Date="2017-08-31T10:19:52.2628834-05:00" Machine="ANMEUCCI07M" User="angel.graciano" Id="5c636644-c526-4326-9716-1397880d652f" LogType="Error" AppId="">
+    <EntityState>Unchanged</EntityState>
+    <Message><![CDATA[Referencia a objeto no establecida como instancia de un objeto.]]></Message>
+  </Event>
+  <Event Date="2017-08-31T10:22:05.7717389-05:00" Machine="ANMEUCCI07M" User="angel.graciano" Id="796ee071-c5ad-4213-baf0-2f4b06ab67f5" LogType="Error" AppId="">
+    <EntityState>Unchanged</EntityState>
+    <Message><![CDATA[Referencia a objeto no establecida como instancia de un objeto.]]></Message>
+  </Event>
+  <Event Date="2017-08-31T10:24:36.5358365-05:00" Machine="ANMEUCCI07M" User="angel.graciano" Id="57fec7a1-168d-48c5-99f0-e7a82a0714d7" LogType="Error" AppId="">
+    <EntityState>Unchanged</EntityState>
+    <Message><![CDATA[Referencia a objeto no establecida como instancia de un objeto.]]></Message>
+  </Event>
+  <Event Date="2017-08-31T10:26:03.0994799-05:00" Machine="ANMEUCCI07M" User="angel.graciano" Id="0509550b-2cbc-4f93-b98a-ce21a567ea25" LogType="Error" AppId="">
+    <EntityState>Unchanged</EntityState>
+    <Message><![CDATA[Referencia a objeto no establecida como instancia de un objeto.]]></Message>
+  </Event>
+</Events>
