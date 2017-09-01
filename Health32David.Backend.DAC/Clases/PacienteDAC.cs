@@ -53,5 +53,38 @@ namespace Health32David.Backend.DAC.Clases
             }
         }
 
+        public bool BuscarDctoExistente(string NumDoc)
+        {
+            try
+            {
+                using (SqlConnection cnn = new SqlConnection(Common.Conection.ConnString))
+                {
+                    cnn.Open();
+                    using (SqlCommand cmd = new SqlCommand("ValidarDNI_Konecta", cnn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@NumDoc", NumDoc);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw Fwk.Exceptions.ExceptionHelper.ProcessException(ex);
+            }
+ 
+        }
+
     }
 }

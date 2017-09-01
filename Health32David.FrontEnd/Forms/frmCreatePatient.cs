@@ -76,6 +76,36 @@ namespace Health32David.FrontEnd.Forms
                 validate =  false;
             }
 
+            if (cmbTipoDocumento.Text == "[Seleccione Tipo de Documento]")
+            {
+                errorProviderValidarCampos.SetError(cmbTipoDocumento, "Por Favor Selecciones Tipo de Documento");
+                validate = false;
+            }
+
+            if (string.IsNullOrEmpty(txtDocumento.Text))
+            {
+                errorProviderValidarCampos.SetError(txtDocumento, "Por Favor Digite el Numero de Documento");
+                validate = false;
+            }
+
+            if (cmbEstadoCivil.Text == "[Seleccione Estado Civil]")
+            {
+                errorProviderValidarCampos.SetError(cmbEstadoCivil, "Por Favor Seleccione Estado Civil");
+                validate = false;
+            }
+
+            if (optHombre.Checked == false && optMujer.Checked == false)
+            {
+                errorProviderValidarCampos.SetError(groupBoxSex, "Por favor Elija su Sexo");
+                validate = false;
+            }
+
+            if (imgFotoCliente.Image == null)
+            {
+                errorProviderValidarCampos.SetError(imgFotoCliente, "Por favor Seleccione la fotografia del Paciente");
+                validate = false;
+            }
+
             return validate;
 
         }
@@ -101,6 +131,22 @@ namespace Health32David.FrontEnd.Forms
                 return false;
         }
 
+        private void imgFotoCliente_Click(object sender, EventArgs e)
+        {
+            string imgFileName = FileFunctions.OpenFileDialog_Open(FileFunctions.OpenFilterEnums.OpenImageFilter);
+            if (String.IsNullOrEmpty(imgFileName))
+                return;
+            Image intermedialImage = Image.FromFile(imgFileName);
+            if (intermedialImage == null) return;
+            imgFotoCliente.Image = Helper.ImageChangeSize(intermedialImage, 200, 250);
+        }
+
+        private void ValidarPacienteDNI()
+        {
+            string numeroDocumento;
+            numeroDocumento = Ser txtDocumento.Text;
+
+        }
         #endregion
 
         #region Eventos
@@ -124,18 +170,17 @@ namespace Health32David.FrontEnd.Forms
         {
             this.Close();
         }
+
+        private void btnSearchPatient_Click(object sender, EventArgs e)
+        {
+            frmSearchPatient frmBuscarPaciente = new frmSearchPatient();
+            frmBuscarPaciente.MdiParent = this.MdiParent;
+            frmBuscarPaciente.WindowState = FormWindowState.Maximized;
+            frmBuscarPaciente.Show();
+        }
         
         #endregion
 
-        private void imgFotoCliente_Click(object sender, EventArgs e)
-        {
-            string imgFileName = FileFunctions.OpenFileDialog_Open(FileFunctions.OpenFilterEnums.OpenImageFilter);
-            if (String.IsNullOrEmpty(imgFileName))
-                return;
-            Image intermedialImage = Image.FromFile(imgFileName);
-            if (intermedialImage == null) return;
-            imgFotoCliente.Image = Helper.ImageChangeSize(intermedialImage, 200, 250);
-        }
 
     }
 }

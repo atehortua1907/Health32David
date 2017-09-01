@@ -24,7 +24,7 @@ namespace Health32David.FrontEnd
             return res.BusinessData;
         }
 
-        internal static int CrearPaciente(PacienteBE Paciente)
+        internal static object CrearPaciente(PacienteBE Paciente)
         {
             CrearPacienteReq req = new CrearPacienteReq();
 
@@ -40,8 +40,10 @@ namespace Health32David.FrontEnd
                 throw ex;
             }
 
-            return res.BusinessData.NumReferencia;
+            return res;
         }
+
+        
 
     }
 }

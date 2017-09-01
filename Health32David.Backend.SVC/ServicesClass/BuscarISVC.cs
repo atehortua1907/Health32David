@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Health32David.Backend.ISVC.Buscar
 {
+    #region Interfaz de Servicio Buscar Parametros
     public class BuscarParametrosReq : Request<ParametrosBE>
     {
         public BuscarParametrosReq()
@@ -19,5 +20,31 @@ namespace Health32David.Backend.ISVC.Buscar
     public class BuscarParametrosRes : Response<ParametrosBEList>
     {
 
+    } 
+    #endregion
+
+    #region Interfaz de Servicio Buscar Buscar Documento Existente
+    public class BuscarDctoExistenteReq : Request<BuscarDctoExistente>
+    {
+        public BuscarDctoExistenteReq()
+        {
+            this.ServiceName = "BuscarDctoExistenteSVC";
+        }
     }
+
+    public class BuscarDctoExistente : BaseEntity
+    {
+        public bool HayDocumento { get; set; }
+    }
+
+    public class BuscarDctoExistenteRes : Response<BuscarDctoExistenteResult>
+    {
+
+    }
+
+    public class BuscarDctoExistenteResult : BaseEntity
+    {
+        public bool HayDocumento { get; set; }
+    } 
+    #endregion
 }

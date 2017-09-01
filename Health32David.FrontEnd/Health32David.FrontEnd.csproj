@@ -60,6 +60,12 @@
     <Compile Include="Forms\frmCreatePatient.Designer.cs">
       <DependentUpon>frmCreatePatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmSearchPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchPatient.Designer.cs">
+      <DependentUpon>frmSearchPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmWelcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="ServiceCall.cs" />
     <EmbeddedResource Include="Forms\frmCreatePatient.resx">
       <DependentUpon>frmCreatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchPatient.resx">
+      <DependentUpon>frmSearchPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>

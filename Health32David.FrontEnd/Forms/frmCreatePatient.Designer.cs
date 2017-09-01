@@ -33,6 +33,9 @@
             this.lblTitleCreatePatient = new System.Windows.Forms.Label();
             this.ctlTabCreatePatient = new System.Windows.Forms.TabControl();
             this.tabPagePatient = new System.Windows.Forms.TabPage();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.imgFotoCliente = new System.Windows.Forms.PictureBox();
             this.groupBoxSex = new System.Windows.Forms.GroupBox();
             this.optMujer = new System.Windows.Forms.RadioButton();
             this.optHombre = new System.Windows.Forms.RadioButton();
@@ -45,21 +48,18 @@
             this.lblEstadoCivil = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblDocumento = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnSearchPatient = new System.Windows.Forms.Button();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.txtNumRefPatient = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.errorProviderValidarCampos = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.imgFotoCliente = new System.Windows.Forms.PictureBox();
             this.ctlTabCreatePatient.SuspendLayout();
             this.tabPagePatient.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFotoCliente)).BeginInit();
             this.groupBoxSex.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderValidarCampos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgFotoCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitleCreatePatient
@@ -99,7 +99,7 @@
             this.tabPagePatient.Controls.Add(this.lblEstadoCivil);
             this.tabPagePatient.Controls.Add(this.label5);
             this.tabPagePatient.Controls.Add(this.lblDocumento);
-            this.tabPagePatient.Controls.Add(this.btnBuscar);
+            this.tabPagePatient.Controls.Add(this.btnSearchPatient);
             this.tabPagePatient.Controls.Add(this.lblApellido);
             this.tabPagePatient.Controls.Add(this.lblName);
             this.tabPagePatient.Controls.Add(this.txtNumRefPatient);
@@ -112,6 +112,49 @@
             this.tabPagePatient.TabIndex = 0;
             this.tabPagePatient.Text = "Paciente";
             this.tabPagePatient.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = global::Health32David.FrontEnd.Properties.Resources.if_Delete_132192;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(655, 376);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(118, 39);
+            this.btnCancelar.TabIndex = 19;
+            this.btnCancelar.Text = "Salir";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = global::Health32David.FrontEnd.Properties.Resources._001_59;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(454, 376);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(129, 39);
+            this.btnGuardar.TabIndex = 18;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // imgFotoCliente
+            // 
+            this.imgFotoCliente.BackgroundImage = global::Health32David.FrontEnd.Properties.Resources.PhotoIcon2;
+            this.imgFotoCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgFotoCliente.Location = new System.Drawing.Point(45, 114);
+            this.imgFotoCliente.Name = "imgFotoCliente";
+            this.imgFotoCliente.Size = new System.Drawing.Size(176, 186);
+            this.imgFotoCliente.TabIndex = 17;
+            this.imgFotoCliente.TabStop = false;
+            this.imgFotoCliente.Click += new System.EventHandler(this.imgFotoCliente_Click);
             // 
             // groupBoxSex
             // 
@@ -218,18 +261,19 @@
             this.lblDocumento.TabIndex = 5;
             this.lblDocumento.Text = "Documento";
             // 
-            // btnBuscar
+            // btnSearchPatient
             // 
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(49, 69);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(178, 39);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar Existente";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnSearchPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearchPatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearchPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchPatient.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSearchPatient.Location = new System.Drawing.Point(49, 69);
+            this.btnSearchPatient.Name = "btnSearchPatient";
+            this.btnSearchPatient.Size = new System.Drawing.Size(178, 39);
+            this.btnSearchPatient.TabIndex = 4;
+            this.btnSearchPatient.Text = "Buscar Paciente";
+            this.btnSearchPatient.UseVisualStyleBackColor = true;
+            this.btnSearchPatient.Click += new System.EventHandler(this.btnSearchPatient_Click);
             // 
             // lblApellido
             // 
@@ -279,49 +323,6 @@
             // 
             this.errorProviderValidarCampos.ContainerControl = this;
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = global::Health32David.FrontEnd.Properties.Resources.if_Delete_132192;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(655, 376);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(118, 39);
-            this.btnCancelar.TabIndex = 19;
-            this.btnCancelar.Text = "Salir";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = global::Health32David.FrontEnd.Properties.Resources._001_59;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(454, 376);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(129, 39);
-            this.btnGuardar.TabIndex = 18;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // imgFotoCliente
-            // 
-            this.imgFotoCliente.BackgroundImage = global::Health32David.FrontEnd.Properties.Resources.PhotoIcon2;
-            this.imgFotoCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgFotoCliente.Location = new System.Drawing.Point(45, 114);
-            this.imgFotoCliente.Name = "imgFotoCliente";
-            this.imgFotoCliente.Size = new System.Drawing.Size(176, 186);
-            this.imgFotoCliente.TabIndex = 17;
-            this.imgFotoCliente.TabStop = false;
-            this.imgFotoCliente.Click += new System.EventHandler(this.imgFotoCliente_Click);
-            // 
             // frmCreatePatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,10 +336,10 @@
             this.ctlTabCreatePatient.ResumeLayout(false);
             this.tabPagePatient.ResumeLayout(false);
             this.tabPagePatient.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFotoCliente)).EndInit();
             this.groupBoxSex.ResumeLayout(false);
             this.groupBoxSex.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderValidarCampos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgFotoCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +350,7 @@
         private System.Windows.Forms.Label lblTitleCreatePatient;
         private System.Windows.Forms.TabControl ctlTabCreatePatient;
         private System.Windows.Forms.TabPage tabPagePatient;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnSearchPatient;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtNumRefPatient;

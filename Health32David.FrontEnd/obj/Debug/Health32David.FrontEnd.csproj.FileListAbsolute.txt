@@ -10,3 +10,4 @@ C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health3
 C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.exe
 C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.pdb
 C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Archivos\Build\ServiceMetadataConfig_colombia.xml
+C:\Users\angel.graciano\Desktop\David A\Desarrollos\Repositories\DSD_TFS\Health32Practica\DavidAtehortua\Health32David\Health32David.FrontEnd\obj\Debug\Health32David.FrontEnd.Forms.frmSearchPatient.resources

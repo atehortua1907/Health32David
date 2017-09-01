@@ -127,12 +127,20 @@ namespace Health32David.FrontEnd
             OpenFrmPatient();
         }
 
-        private void OpenFrmPatient()
+        public void OpenFrmPatient()
         {
             frmCreatePatient FormularioPaciente = new frmCreatePatient();
             FormularioPaciente.MdiParent = this;
             FormularioPaciente.WindowState = FormWindowState.Maximized;
             FormularioPaciente.Show();
+        }
+
+        public void ShowFrmSearchPatient()
+        {
+            frmSearchPatient frmBuscarPaciente = new frmSearchPatient();
+            frmBuscarPaciente.MdiParent = this;
+            frmBuscarPaciente.WindowState = FormWindowState.Maximized;
+            frmBuscarPaciente.Show();
         }
     }
 }
